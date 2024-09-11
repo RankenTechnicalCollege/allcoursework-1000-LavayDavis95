@@ -32,6 +32,10 @@ a:hover{
 a:focus{
   color:purple;
 }
-
-
+p {
+  font: italic small-caps bold 20px/1.6"Times New Roman", serif;
+}
+body {
+  text-shadow: 2px 2px 5px rgb(57, 16, 132)
+}
 
