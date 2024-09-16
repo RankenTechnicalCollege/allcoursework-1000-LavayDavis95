@@ -1,0 +1,19 @@
+#lavay {
+  font-family: Arial;
+  font-weight: bold;
+}
+main p {
+  color: red;
+}
+.footer {
+  text-align: center;
+  font-family: 'Times New Roman';
+}
+nav {
+  background-color: blue;
+  font-family: Helvetica;
+}
+ul > li {
+  font-family: sans-serif;
+  border: 1px solid black;
+}
