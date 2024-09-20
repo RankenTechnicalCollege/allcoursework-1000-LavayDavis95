@@ -1,0 +1,174 @@
+* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:lightgray;
+}
+
+/* NAV/HEADER */
+nav {
+    background-color: pink;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: purple;
+}
+
+/* Logo*/
+.logo img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-family: Monsieur La Doulaise;
+}
+
+/* SECTION*/
+.featured {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: white;
+}
+
+.featured-text {
+    max-width: 50%;
+}
+
+.featured-text h1 {
+    font-size: 36px;
+    color: black;
+}
+
+.featured-text h2 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: pink;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: purple;
+}
+
+.featured-image img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* TOP SECTION OF MAIN */
+.top-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: white;
+}
+
+.top-section-feature {
+    text-align: center;
+}
+
+.top-section-feature img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.top-section-feature h3 {
+    margin-top: 15px;
+    color: black;
+}
+
+.top-section-feature p {
+    color: BLACK;
+}
+
+/* BOTTOM SECTION OF MAIN */
+.bottom-section {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.bottom-section h2 {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.category {
+    display: inline-block;
+    width: 22%;
+    margin: 0 1%;
+    text-align: center;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.category h4 {
+    margin-top: 15px;
+    color: black;
+}
+
+.category p {
+    color: black;
+}
+
+/* Footer */
+footer {
+    background-color: pink;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    font-family: Monsieur La Doulaise;
+}
+
+@media
