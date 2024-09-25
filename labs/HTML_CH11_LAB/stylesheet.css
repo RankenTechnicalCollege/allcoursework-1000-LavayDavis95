@@ -1,0 +1,41 @@
+.jumbotron{
+  background-image:url(images/background.jpg) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  margin: 0;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  color: black;
+  text-shadow:2px 2px 5px white;
+}
+
+.jumbotron-heading{
+  font-family: Copperplate, Papyrus, fantasy;
+  font-weight: bold;
+}
+
+.card-1{
+  background-color: red;
+}
+
+.card-2{
+  background-color: purple;
+}
+
+.card-3{
+  background-color: pink;
+}
+
+.card-4{
+  background-color: blue;
+}
+
+.card-5{
+  background-color: green;
+}
