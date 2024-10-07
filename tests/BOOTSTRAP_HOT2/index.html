@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+<div class="container mt-4">
+    <div class="row">
+
+
+        <!-- COLUMN 1 -->
+        <div class="col-12 col-md">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Chicken Adobo
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Chicken Adobo is a flavorful, comforting Filipino dish of chicken that's marinated in vinegar and soy sauce, then slowly cooked with garlic and spices
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="col-12 col-md">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Pineapple
+                    <span class="badge bg-primary rounded-pill">1</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                   Bananas
+                    <span class="badge bg-primary rounded-pill">2</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Responsive Image -->
+        <div class="col-12 col-md">
+            <img src="images/tacos.jpg" class="img-fluid" alt="tacos">
+        </div>
+
+        <!-- COLUMN 4 -->
+        <div class="col-12 col-md">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#foodModal">
+                Boneless Wings
+            </button>
+            <div class="modal fade" id="foodModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel">Boneless Wings</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            I don't care that boneless "wings" aren't actually wings. They taste better than actual wings. Also, they're not nuggets because nuggets are a mixture of dark and white meat while boneless wings are just white meat.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLUMN 5 -->
+        <div class="col-12 col-md">
+            <p><span class="heading-span">Lumpia</span>Lumpia are a type of spring roll that originated in China, Indonesia, and the Philippines.
+              They are made by wrapping a savory or sweet filling in a thin, crepe-like pastry skin called a lumpia wrapper.</p>
+        </div>
+    </div>
+</div>
+
+<!-- CAROUSEL -->
+<div id="carousel" class="carousel small-carousel slide mt-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/tacos.jpg" class="d-block w-100" alt="tacos">
+        </div>
+        <div class="carousel-item">
+            <img src="images/pineapple.jpg" class="d-block w-100" alt="pineapples">
+        </div>
+        <div class="carousel-item">
+            <img src="images/bananas.jpg" class="d-block w-100" alt="bananas">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- CARDS -->
+<div class="container mt-4">
+  <div class="row">
+      <div class="col-md-6">
+          <div class="card custom-card" style="background-image: url(images/pizza.jpg);">
+              <div class="card-body">
+                  <h5 class="card-title">Pizza</h5>
+                  <p class="card-text">a dish of Italian origin consisting of a flat, round base of dough baked with a topping of tomato sauce and cheese, typically with added meat or vegetables.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="card custom-card" style="background-image: url(images/burrito.jpg);">
+              <div class="card-body">
+                  <h5 class="card-title">Burrito</h5>
+                  <p class="card-text">Burritos are filled with savory ingredients, most often a meat such as beef, chicken, or pork, and often include other ingredients, such as rice, cooked beans.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- ICONS-->
+<div class="container mt-4">
+  <h3>Our Favorite Icons</h3>
+  <div class="row text-center">
+      <div class="col-4 col-md-2">
+          <i class="bi bi-alarm" style="font-size: 2rem;"></i>
+          <p>Alarm</p>
+      </div>
+      <div class="col-4 col-md-2">
+          <i class="bi bi-bag" style="font-size: 2rem;"></i>
+          <p>Bag</p>
+      </div>
+      <div class="col-4 col-md-2">
+          <i class="bi bi-basket" style="font-size: 2rem;"></i>
+          <p>Basket</p>
+      </div>
+      <div class="col-4 col-md-2">
+          <i class="bi bi-cup" style="font-size: 2rem;"></i>
+          <p>Cup</p>
+      </div>
+      <div class="col-4 col-md-2">
+          <i class="bi bi-emoji-smile" style="font-size: 2rem;"></i>
+          <p>Smile</p>
+      </div>
+      <div class="col-4 col-md-2">
+          <i class="bi bi-house" style="font-size: 2rem;"></i>
+          <p>House</p>
+      </div>
+  </div>
+</div>
+
+<!--SIGN IN-->
+<a href="sign-in.html" class="btn btn-primary">Sign In</a>
+
+<!-- FOOTER -->
+<footer class="mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <p>&copy; 2024 Vay inc</p>
+            </div>
+            <div class="col-md">
+                <i class="bi bi-emoji-smile" style="font-size: 2rem;"></i>
+            </div>
+            <div class="col-md">
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

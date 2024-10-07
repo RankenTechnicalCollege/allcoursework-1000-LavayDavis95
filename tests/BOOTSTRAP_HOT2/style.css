@@ -1,0 +1,20 @@
+.custom-card {
+  background-size: cover;
+  height: 200px;
+  color:white
+}
+
+.heading-span {
+  font-size: 1.5rem;
+  font-weight:bold;
+}
+
+.small-carousel{
+  height: 300px;
+ width: 300px;
+}
+
+.small-carousel .carousel-item img {
+  height: 100;
+  object-fit: cover;
+}
