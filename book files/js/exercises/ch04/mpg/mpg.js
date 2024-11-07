@@ -14,18 +14,34 @@ const processEntries = () => {
     const miles = parseFloat($("#miles").value);
     const gallons = parseFloat($("#gallons").value);
 
-    if (isNaN(miles) || miles <= 0) {
-        alert(getErrorMsg("Miles driven"));
+    if (isNaN(miles)) {
+        alert ("Miles driven must be a numeric value.");
         focusAndSelect("#miles");
-    } else if (isNaN(gallons) || gallons <= 0) {
-        alert(getErrorMsg("Gallons of gas used"));
+    } else if (miles <= 0) {
+        alert ("Miles driven must be greater than zero.");
+        focusAndSelect ("#miles");
+    } else if (isNaN(gallons)) {
+        alert ("Gallons of gas used must be a numeric value.");
+        focusAndSelect("#gallons");
+    } else if (gallons <= 0) {
+        alert("Gallons of gas used must be greater than zero.");
         focusAndSelect("#gallons");
     } else {
         $("#mpg").value = (miles / gallons).toFixed(2);
     }
 };
 
+"use strict";
+const clearEntries = () => {
+    $("#miles").value = "";
+    $("#gallons").value = ""
+    $("#mpg").value = ""
+    focusAndSelect("#miles");
+};
+
 document.addEventListener("DOMContentLoaded", () => {
     $("#calculate").addEventListener("click", processEntries);
+    $("#clear").addEventListener("click", clearEntries);
+    $("#miles").addEventListener("dblclick",clearEntries);
     $("#miles").focus();
 });
