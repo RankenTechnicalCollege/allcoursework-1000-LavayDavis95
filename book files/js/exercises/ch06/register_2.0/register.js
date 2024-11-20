@@ -35,6 +35,7 @@ const processEntries = () => {
     const phone = $("#phone");
     const country = $("#country");
     const terms = $("#terms");
+    const comments = $("#comments");
 
     // create array for error messages
     const msgs = [];
@@ -52,6 +53,7 @@ const processEntries = () => {
     if (terms.checked == false) {
         msgs[msgs.length] = "You must agree to the terms of service."; 
     }
+    if (!comments.value.trim()) msgs.push("Please enter a comment.");
 
     // submit the form or notify user of errors
     if (msgs.length == 0) {  // no error messages
@@ -60,6 +62,8 @@ const processEntries = () => {
         displayErrorMsgs(msgs);
     }
 };
+
+
 
 const resetForm = () => {
     $("form").reset();

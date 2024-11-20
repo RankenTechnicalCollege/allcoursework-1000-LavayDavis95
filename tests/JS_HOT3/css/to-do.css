@@ -1,0 +1,14 @@
+
+.task-item {
+  cursor: pointer;
+  background-color: whitesmoke;
+  border: 1px solid white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color:gray;
+}
