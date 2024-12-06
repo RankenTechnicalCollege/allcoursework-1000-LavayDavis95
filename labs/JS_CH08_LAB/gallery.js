@@ -1,11 +1,11 @@
 $(() => {
-  // Preload images
+ 
   $("#gallery a").each(function () {
     const img = new Image();
     img.src = $(this).attr("href");
   });
 
-  // Set up event listeners for click
+
   $("#gallery a").on("click", function (event) {
     event.preventDefault();
 
@@ -20,12 +20,11 @@ $(() => {
     $(this).addClass("active").focus();
   });
 
-  // Close viewer on button click
   $("#closeViewer").on("click", function () {
     $("#viewer").addClass("hidden");
   });
 
-  // Keyboard support
+
   $("#gallery a").first().focus();
   $(document).on("keydown", function (event) {
     const active = $("#gallery a.active");
@@ -40,7 +39,7 @@ $(() => {
       active.removeClass("active");
       prev.addClass("active").focus();
     } else if (event.key === "Escape") {
-      $("#viewer").addClass("hidden"); // Close viewer on Escape key
+      $("#viewer").addClass("hidden"); 
     }
   });
 });
