@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <h1>Image Gallery</h1>
+  <div id="gallery">
+    <a href="images/taco.jpeg" title="Taco">
+      <img src="images/taco.jpeg" alt="Thumbnail for Image 1">
+    </a>
+    <a href="images/burrito.jpg" title="Burrito">
+      <img src="images/burrito.jpg" alt="Thumbnail for Image 2">
+    </a>
+    <a href="images/enchiladas.jpeg" title="Enchiladas">
+      <img src="images/enchiladas.jpeg" alt="Thumbnail for Image 3">
+    </a>
+  </div>
+  <div id="viewer" class="hidden">
+    <img id="largeImage" src="" alt="Large View">
+    <p id="caption"></p>
+    <button id="closeViewer">Close</button>
+  </div>
+  <script src="gallery.js"></script>
+</body>
+</html>
