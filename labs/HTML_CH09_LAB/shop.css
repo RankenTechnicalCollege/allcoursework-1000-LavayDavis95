@@ -15,8 +15,8 @@ body {
 /* Header styles */
 header {
   display: flex;
-  flex-direction: column; /* Stack logo and navbar vertically */
-  align-items: center; /* Center-align logo and navbar */
+  flex-direction: column; 
+  align-items: center; 
   background-color: black;
   color: white;
   padding: 20px 0;
@@ -24,14 +24,14 @@ header {
 
 /* Logo section */
 header .logo {
-  display: flex; /* Flex container for the logo */
-  align-items: center; /* Align logo items vertically */
-  justify-content: center; /* Center the logo horizontally */
-  margin-bottom: 20px; /* Space between logo and navbar */
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  margin-bottom: 20px;
 }
 
 header .logo a {
-  display: flex; /* Aligns logo image and text horizontally */
+  display: flex; 
   align-items: center;
   color: white;
   text-decoration: none;
@@ -45,16 +45,16 @@ header .logo img {
 
 /* Navbar section */
 .navbar {
-  width: 100%; /* Ensure navbar spans the full width */
+  width: 100%; 
 }
 
 .navbar nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Horizontal navigation */
-  justify-content: center; /* Center-align navigation links */
-  gap: 20px; /* Space between links */
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
 }
 
 .navbar nav ul li {
@@ -153,16 +153,16 @@ footer {
 
 /* Media Queries for Responsiveness */
 
-/* Mobile - Navbar in vertical layout */
+
 @media (max-width: 600px) {
   .navbar nav ul {
-      flex-direction: column; /* Stack links vertically */
-      align-items: center; /* Center-align links */
-      gap: 10px; /* Add spacing between links */
+      flex-direction: column; 
+      align-items: center; 
+      gap: 10px; 
   }
 
   .product {
-      flex: 1 1 100%; /* Products take full width */
+      flex: 1 1 100%;
   }
 
   .content-wrapper {
@@ -172,6 +172,13 @@ footer {
   aside {
       order: -1; 
       margin-bottom: 20px;
+  }
+
+  
+  .intro {
+      flex-direction: column; 
+      align-items: flex-start; 
+      gap: 10px; 
   }
 }
 
