@@ -1,3 +1,4 @@
+/* Reset and global styles */
 * {
   margin: 0;
   padding: 0;
@@ -11,17 +12,26 @@ body {
   min-height: 100vh;
 }
 
+/* Header styles */
 header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; /* Stack logo and navbar vertically */
+  align-items: center; /* Center-align logo and navbar */
   background-color: black;
-  padding: 20px;
   color: white;
+  padding: 20px 0;
+}
+
+/* Logo section */
+header .logo {
+  display: flex; /* Flex container for the logo */
+  align-items: center; /* Align logo items vertically */
+  justify-content: center; /* Center the logo horizontally */
+  margin-bottom: 20px; /* Space between logo and navbar */
 }
 
 header .logo a {
-  display: flex;
+  display: flex; /* Aligns logo image and text horizontally */
   align-items: center;
   color: white;
   text-decoration: none;
@@ -33,24 +43,31 @@ header .logo img {
   margin-right: 10px;
 }
 
-nav ul {
+/* Navbar section */
+.navbar {
+  width: 100%; /* Ensure navbar spans the full width */
+}
+
+.navbar nav ul {
   list-style-type: none;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0;
+  display: flex; /* Horizontal navigation */
+  justify-content: center; /* Center-align navigation links */
+  gap: 20px; /* Space between links */
 }
 
-nav ul li {
-  margin: 10px 0;
+.navbar nav ul li {
+  margin: 0;
 }
 
-nav ul li a {
+.navbar nav ul li a {
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
 
+/* Content wrapper */
 .content-wrapper {
   display: flex;
   flex-direction: column;
@@ -62,18 +79,30 @@ main {
   flex-grow: 1;
 }
 
- .intro, .products, .info {
-  margin-bottom: 20px;
-}
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.intro, .products, .info {
   margin-bottom: 20px;
 }
 
+/* Intro section */
+.intro {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  text-align: center;
+  margin-bottom: 20px;
+  gap: 20px; 
+}
+
+.intro-paragraph {
+  flex: 1; 
+  padding: 10px; 
+}
+
+.intro-paragraph p {
+  margin: 0; 
+}
+
+/* Products grid */
 .products .product-grid {
   display: flex;
   flex-wrap: wrap;
@@ -106,6 +135,7 @@ main {
   flex-grow: 1;
 }
 
+/* Sidebar */
 aside {
   background-color: #f4f4f4;
   padding: 20px;
@@ -113,6 +143,7 @@ aside {
   border: 1px solid #ccc;
 }
 
+/* Footer */
 footer {
   background-color: black;
   color: white;
@@ -120,9 +151,18 @@ footer {
   padding: 20px;
 }
 
+/* Media Queries for Responsiveness */
+
+/* Mobile - Navbar in vertical layout */
 @media (max-width: 600px) {
+  .navbar nav ul {
+      flex-direction: column; /* Stack links vertically */
+      align-items: center; /* Center-align links */
+      gap: 10px; /* Add spacing between links */
+  }
+
   .product {
-      flex: 1 1 100%;
+      flex: 1 1 100%; /* Products take full width */
   }
 
   .content-wrapper {
@@ -135,6 +175,7 @@ footer {
   }
 }
 
+/* Tablet and larger screens */
 @media (min-width: 600px) {
   nav ul {
       flex-direction: row;
@@ -145,6 +186,7 @@ footer {
   }
 }
 
+/* Desktop view */
 @media (min-width: 900px) {
   header {
       flex-direction: row;
@@ -167,6 +209,7 @@ footer {
   }
 }
 
+/* Larger screens */
 @media (min-width: 1200px) {
   body {
       max-width: 1200px;
@@ -174,6 +217,7 @@ footer {
   }
 }
 
+/* Very large screens */
 @media (min-width: 2500px) {
   body {
       max-width: 2500px;
