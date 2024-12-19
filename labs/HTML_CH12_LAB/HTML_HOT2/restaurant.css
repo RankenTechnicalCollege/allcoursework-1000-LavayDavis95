@@ -1,0 +1,61 @@
+header {
+  background-color: lightblue;
+  color: black;
+  font-family: 'Cinzel',serif;
+  text-align:center;
+}
+
+
+.custom-jumbotron {
+   width: 100%; 
+   height: 20vh;
+   background-image: url(Images/Philippines_flag.jpg);
+   background-size: cover; 
+   background-position: center;
+   background-repeat: no-repeat; 
+   display: flex;
+   flex-direction: column; 
+   justify-content: center; 
+   align-items: center; 
+   text-align: center; 
+   color: black;
+   padding: 0 20px; 
+  }
+  
+  div{
+    color:black
+
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  #Pancit {
+    background-color: purple;
+  }
+  #Chicken_adobo {
+    background-color: red;
+  }
+  #Lumpia{
+    background-color: blue;
+  }
+  
+  #Sinigang {
+    background-color: yellow;
+  }
+  #Pinakbet{
+    background-color: orange;
+  }
+  .menu{
+    background-color:pink;
+  }
+  .map{
+    background-color: aquamarine;
+
+  }
+  footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+  }
